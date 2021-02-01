@@ -18,7 +18,7 @@ public class damageArea : MonoBehaviour
         StartCoroutine("DestroySelf");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         hitEnemy = collision.gameObject;
         if (hitEnemy.tag == "Enemy")
